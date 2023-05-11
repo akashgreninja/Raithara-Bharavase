@@ -80,6 +80,8 @@ ul {
 }
 .card-2 {
   background-image: url("https://www.livemint.com/lm-img/img/2023/03/28/1600x900/2-0-982286939-fertilizer2-0_1679912191638_1679979568345_1679979568345.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 190px;
   height: 254px;
   /* background: rgb(103, 225, 255); */
@@ -91,6 +93,17 @@ ul {
 }
 .card-3 {
   background-image: url("https://earthsally.com/wp-content/uploads/2021/03/blackspot-plant-disease-1024x512.jpg");
+  width: 190px;
+  height: 254px;
+  /* background: rgb(103, 225, 255); */
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  font-size: 30px;
+  font-weight: 900;
+}
+.card-4 {
+  background-image: url("https://media.licdn.com/dms/image/C4D12AQELkn4iwKflAw/article-cover_image-shrink_600_2000/0/1614582203900?e=2147483647&v=beta&t=LV3RxgO7aLWZ-Wq8quMbXq4JBpHJTtyhQPdlmvGGBgQ");
   width: 190px;
   height: 254px;
   /* background: rgb(103, 225, 255); */
@@ -1175,6 +1188,92 @@ form.newsletter {
   min-height: 8.5em;
   resize: none;
 }
+
+button {
+  position: relative;
+  margin: 0;
+  padding: 1em 2em;
+  outline: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  background-color: #333;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 18px;
+  font-family: inherit;
+  z-index: 0;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+button:hover {
+  animation: sh0 0.5s ease-in-out both;
+}
+
+@keyframes sh0 {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: rotate(7deg) translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: rotate(-7deg) translate3d(0, 0, 0);
+  }
+
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+
+button:hover span {
+  animation: storm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+
+button::before,
+button::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0;
+  transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+  z-index: -1;
+  transform: translate(100%, -25%) translate3d(0, 0, 0);
+}
+
+button:hover::before,
+button:hover::after {
+  opacity: 0.15;
+  transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+button:hover::before {
+  transform: translate3d(50%, 0, 0) scale(0.9);
+}
+
+button:hover::after {
+  transform: translate(50%, 0) scale(1.1);
+}
+
+
 .contact-left input[type="email"] {
   margin: 1.5em 0;
 }

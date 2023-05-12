@@ -113,6 +113,17 @@ ul {
   font-size: 30px;
   font-weight: 900;
 }
+.card-5 {
+  background-image: url("https://www.deccanherald.com/sites/dh/files/articleimages/2020/06/11/iStock-598098222-1591889319.jpgQ");
+  width: 190px;
+  height: 254px;
+  /* background: rgb(103, 225, 255); */
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  font-size: 30px;
+  font-weight: 900;
+}
 
 .card:hover {
   border-radius: 15px;

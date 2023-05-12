@@ -1,0 +1,97 @@
+{
+    "data": [
+        {
+          "id": "f41c6406-6427-4b87-8b7d-2d6eb7457eb3",
+          "electionName": "Kishan Union elections 2023",
+          "isLive": false,
+          "isDigiVoterEligible": true,
+          "coverImage": "https://akm-img-a-in.tosshub.com/businesstoday/images/story/201905/generalelections2019e-660_051919073342.jpg?size=948:533",
+          "desc": "The purpose of farmer elections can vary depending on the specific context. They may be held to elect leaders of farmer associations, cooperatives, or unions who will advocate for farmers' rights, negotiate prices, or address issues such as agricultural policies, land use, and farming practices. Farmer elections can also take place within agricultural boards, councils, or committees responsible for managing resources, implementing regulations, or overseeing agricultural programs..",
+          "isState": false,
+          "votingDates": [
+            {
+              "date": "April 11, 2024",
+              "phase": "1"
+            },
+            {
+              "date": "April 18, 2024",
+              "phase": "2"
+            },
+            {
+              "date": "April 23, 2024",
+              "phase": "3"
+            },
+            {
+              "date": "April 29, 2024",
+              "phase": "4"
+            },
+            {
+              "date": "May 6, 2024",
+              "phase": "5"
+            },
+            {
+              "date": "May 12, 2024",
+              "phase": "6"
+            },
+            {
+              "date": "May 19, 2024",
+              "phase": "7"
+            }
+          ]
+        },
+        {
+          "id": "163e0e81-70c3-469a-bbd2-1b88f81b15f9",
+          "electionName": "Farmer protests",
+          "isLive": true,
+          "isDigiVoterEligible": true,
+          "coverImage": "https://images.indianexpress.com/2022/03/farmers-protest.jpg",
+          "desc": "The Karnataka Assembly Elections of 2023 is an important political event in the state of Karnataka, where voters will choose their representatives to the state legislative assembly. With over 30 million eligible voters, it is a crucial exercise in democracy. The election outcome will impact the state's future development and policies. The election campaign will witness intense competition between major political parties, each vying to win the hearts and minds of the people.",
+          "isState": true,
+          "votingDates": [
+            {
+              "date": "April 22, 2023",
+              "phase": "1"
+            },
+            {
+              "date": "April 29, 2023",
+              "phase": "2"
+            },
+            {
+              "date": "May 6, 2023",
+              "phase": "3"
+            },
+            {
+              "date": "May 10, 2023",
+              "phase": "4"
+            }
+          ]
+        },
+        {
+            "id": "7f828b22-8996-4aa5-9743-7a39ec23c4b7",
+            "electionName": "BJP tries too cool off farmer protests",
+            "isLive": true,
+            "isDigiVoterEligible": false,
+            "coverImage": "https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2021/12/31/656893-01-02-1-1066455-1640920650.jpg?itok=n32fwYnz",
+            "desc": "The Bihar Assembly Elections of 2025 is a significant political event in the state of Bihar, where voters will elect their representatives to the state legislative assembly. With over 70 million eligible voters, it is one of the largest state-level democratic exercises in India. The outcome of the elections will determine the future course of the state's development and policies. The election campaign will see intense competition among major political parties, each trying to woo the electorate with their agendas and promises.",
+            "isState": true,
+            "votingDates": [
+              {
+                "date": "April 22, 2023",
+                "phase": "1"
+              },
+              {
+                "date": "April 29, 2023",
+                "phase": "2"
+              },
+              {
+                "date": "May 6, 2023",
+                "phase": "3"
+              },
+              {
+                "date": "May 10, 2023",
+                "phase": "4"
+              }
+            ]
+          }
+      ]
+}

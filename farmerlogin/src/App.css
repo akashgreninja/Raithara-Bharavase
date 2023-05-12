@@ -1,0 +1,66 @@
+.App {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.honourable-mentions-title{
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.honourable-mentions-role {
+  color: #fff;
+  font-size: 0.9em;
+}
+
+.facescan-container{
+  display: flex;
+  height: 80vh;
+  padding: 10px;
+  align-items: center;
+}
+
+.facescan-content{
+  min-width: 400px;
+  margin: 0 auto;
+  min-height: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 50px rgba(0,0,0,0.1);
+}
+
+.facescan{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #f2f2f2;
+  object-fit: cover;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #1976d250;
+  color: #1976d2;
+}
+
+th {
+  background-color: #1976d230;
+}
+
+.breaker{
+  min-width: 300px;
+}

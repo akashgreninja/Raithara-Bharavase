@@ -66,7 +66,7 @@ ul {
   padding: 0;
 }
 
-.card {
+.cardx {
   background-image: url("../images/s3.jpg");
   width: 190px;
   height: 254px;
@@ -125,7 +125,7 @@ ul {
   font-weight: 900;
 }
 
-.card:hover {
+.cardx:hover {
   border-radius: 15px;
   cursor: pointer;
   /* transform: scale(1.2); */
@@ -144,7 +144,7 @@ ul {
   border-radius: 15px;
 }
 
-.card:hover .first-content {
+.cardx:hover .first-content {
   height: 0px;
   opacity: 0;
 }
@@ -162,7 +162,7 @@ ul {
   transform: rotate(90deg) scale(-1);
 }
 
-.card:hover .second-content {
+.cardx:hover .second-content {
   opacity: 1;
   height: 100%;
   font-size: 1.8rem;
@@ -1056,12 +1056,6 @@ p.count-text {
   color: #aaa;
   font-size: 14px;
 }
-/*-- //team --*/
-
-/*-- //about page --*/
-
-/*-- services page --*/
-/* home grid */
 
 .home-grid {
   padding: 1.5em;
@@ -1109,9 +1103,7 @@ h4.home-title {
   margin-bottom: 3em;
 }
 
-/* //home grid */
 
-/* newsletter */
 .newsletter_right_w3.py-5 {
   background: #f8f9fa;
 }
@@ -1853,4 +1845,4 @@ a.move-top {
 @media (max-width: 320px) {
 }
 
-/*-- //Responsive design --*/
+

@@ -836,7 +836,7 @@ for (var i = 0; i < ind_plays.length; i++) {
   if (a.Type == "Gully Cricket") imloc += "hector.jpg";
   else if (a.Type == "Park") imloc += "paddy.jpg";
   else if (a.Type == "Cricket Ground") imloc += "download.jpg";
-  else imloc += "paddy.jpg";
+  else imloc += "fertilizer.jpg";
 
   marker.bindPopup(
     '<div class="content-pop">' +
@@ -853,8 +853,8 @@ for (var i = 0; i < ind_plays.length; i++) {
       "ID : " +
       a.Code +
       "<br> <center>" +
-      "Crops Grown : " +
-      a.Freq +
+      "Fertilizer shop " +
+      // a.Freq +
       "<br>" +
       "Type : " +
       a.Type +
@@ -1031,8 +1031,8 @@ for (var i = 0; i < shops.length; i++) {
 var overlayLayers = {
   "World ": world_playsmarkers,
   "India ": ind_playmarkers,
-  Merchants: stadiumMarkers,
-  Shops: shopMarkers,
+  "Merchants": stadiumMarkers,
+  "Shops": shopMarkers,
   // 'Female' : femaleMarkers
 };
 

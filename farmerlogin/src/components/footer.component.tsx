@@ -94,8 +94,8 @@ const FooterComponent: React.FC = () => {
                         <FooterLink href="#">Expenditure</FooterLink>
                         <FooterLink href="#">International Cooperation</FooterLink>
                         <FooterLink href="#">ICT</FooterLink>
-                        <FooterLink href="#">Political Parties</FooterLink>
-                        <FooterLink href="#">Election Planning</FooterLink>
+                        <FooterLink href="#"></FooterLink>
+                        <FooterLink href="#"></FooterLink>
                         <FooterLink href="#">Accessibility &amp; Inclusion</FooterLink>
                     </FooterLinks>
 

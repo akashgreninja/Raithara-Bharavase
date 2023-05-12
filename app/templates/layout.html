@@ -230,8 +230,90 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //footer -->
 
 	<!-- move top icon -->
-	<a href="#home" class="move-top text-center"></a>
+	<button id="chatButton" onclick="toggleChat()">Open Chat</button>
+
+<div id="chatContainer">
+  <h2>Chatbot</h2>
+  <div id="chatMessages"></div>
+  <div class="user-input">
+    <input type="text" id="userInput" placeholder="Type your message" />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+
 	<!-- //move top icon -->
 </body>
+<script>
+	// Global variable to store chatbot responses
+	var chatbotResponses = {};
+  
+	// Function to load the JSON file
+	function loadJSONFile(callback) {
+	  var xobj = new XMLHttpRequest();
+	  xobj.overrideMimeType("application/json");
+	  xobj.open('GET', '{{ url_for("static", filename="data.json") }}', true);
+	  xobj.onreadystatechange = function () {
+		if (xobj.readyState === 4 && xobj.status === 200) {
+		  chatbotResponses = JSON.parse(xobj.responseText);
+		  callback();
+		}
+	  };
+	  xobj.send(null);
+	}
+  
+	// Function to toggle the chat container visibility
+	function toggleChat() {
+	  var chatContainer = document.getElementById("chatContainer");
+	  if (chatContainer.style.display === "none") {
+		chatContainer.style.display = "block";
+	  } else {
+		chatContainer.style.display = "none";
+	  }
+	}
+	document.addEventListener("DOMContentLoaded", function() {
+  var chatButton = document.getElementById("chatButton");
+  var chatContainer = document.getElementById("chatContainer");
 
+  chatButton.addEventListener("click", function() {
+    chatContainer.classList.toggle("show");
+  });
+
+  document.addEventListener("click", function(event) {
+    var target = event.target;
+    if (!chatContainer.contains(target) && target !== chatButton) {
+      chatContainer.classList.remove("show");
+    }
+  });
+});
+
+	// Function to send a message and receive a response
+	function sendMessage() {
+	  var userInput = document.getElementById("userInput").value;
+	  var chatMessages = document.getElementById("chatMessages");
+  
+	  // Process user input and get the response from the loaded JSON data
+	  var response = chatbotResponses[userInput.toLowerCase()] || "Sorry, I don't understand.";
+  
+	  // Display the response in the chat window
+	  var botMessage = document.createElement("p");
+	  botMessage.innerText = "Bot: " + response;
+	  chatMessages.appendChild(botMessage);
+  
+	  // Clear the user input field
+	  document.getElementById("userInput").value = "";
+	}
+  
+	// Function to initialize the chatbot after loading the JSON file
+	function initializeChatbot() {
+	  // Add event listener to the chat button
+	  document.getElementById("chatButton").addEventListener("click", toggleChat);
+  
+	  // Add event listener to the send button
+	  document.getElementById("sendButton").addEventListener("click", sendMessage);
+	}
+  
+	// Load the JSON file and initialize the chatbot
+	loadJSONFile(initializeChatbot);
+  </script>
 </html>

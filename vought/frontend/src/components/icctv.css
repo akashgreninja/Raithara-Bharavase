@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    width: 200px;
+    padding: 5px;
+    margin-top: 5px;
+  }
+
+  #qrCode {
+    margin-top: 20px;
+  }
+
+  #qrCode img {
+    display: block;
+    margin: 10px auto;
+  }

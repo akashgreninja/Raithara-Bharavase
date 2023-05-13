@@ -1,0 +1,9 @@
+{
+  "leaderboard": [
+    { "runs": 180, "address": "0x036A0ACc7D8b9fAaBdCD2eFf3A8Ed3c068294F74" },
+    { "runs": 155, "address": "0x20xdEc5B4A5cCfE6E9079e407bC69a36f9F65f19033" },
+    { "runs": 150, "address": "0x1C48137DC8B04764B83776456DaC37aF6B94cBf8" },
+    { "runs": 120, "address": "0x2cBf55e51d30e9aCCbc9373dfedfEC1a3f471BC3" },
+    { "runs": 100, "address": "0x2cBf55e51d30e9aBBbc9373dfedfEC1a3f471BC3" }
+  ]
+}
